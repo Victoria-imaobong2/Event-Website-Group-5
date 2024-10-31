@@ -1,0 +1,61 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-pink-50 {
+    background-color: #f9f2f6; /* Light pink background */
+}
+
+.text-purple-800 {
+    color: #6b5b9a; /* Dark purple text */
+}
+
+.text-purple-700 {
+    color: #7e6e9b; /* Medium purple text */
+}
+
+.text-purple-600 {
+    color: #a87dbf; /* Light purple text */
+}
+
+.bg-purple-50 {
+    background-color: #f3e8ff; /* Light purple background */
+}
+
+.border-purple-500 {
+    border-color: #9b59b6; /* Purple border */
+}
+
+.bg-orange-600 {
+    background-color: #e67e22; /* Orange background */
+}
+
+.text-pink-700 {
+    color: #d63384; /* Pink text */
+}
+
+/* Additional styles for images */
+.rounded-full {
+    border-radius: 50%;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .md\:ml-8 {
+        margin-left: 2rem;
+    }
+    .md\:w-1\/2 {
+        width: 50%;
+    }
+    .md\:mt-0 {
+        margin-top: 0;
+    }
+}

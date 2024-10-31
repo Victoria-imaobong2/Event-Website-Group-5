@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicia & Winner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body class="bg-pink-50">
+    <header class="flex justify-between items-center p-4 bg-white shadow">
+        <h1 class="text-xl font-bold text-purple-800">Felicia & Winner</h1>
+        <a class="text-purple-600" href="{{ url_for('rsvp') }}">RSVP</a>
+    </header>
+
+    <main class="flex flex-col md:flex-row items-center justify-center min-h-screen p-8">
+        <div class="text-center md:text-left md:w-1/2 p-4">
+            <h2 class="text-5xl font-bold text-purple-700 mb-4">Felicia & Winner Are Getting Married!</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                We are so excited to celebrate our special day with all of our favorite people. This website is your go-to resource for all the details about our wedding and the best place to RSVP.
+            </p>
+            <a class="bg-orange-600 text-white py-2 px-4 rounded" href="{{ url_for('rsvp') }}">RSVP</a>
+        </div>
+        <div class="md:w-1/2 p-4">
+            <img alt="Couple in traditional attire" class="rounded-full" height="600" src="YOUR_IMAGE_URL_1.jpg" width="600"/> <!-- Replace with your image URL -->
+        </div>
+    </main>
+
+    <div class="flex flex-col md:flex-row items-center justify-center min-h-screen p-8 bg-white">
+        <div class="rounded-full overflow-hidden w-80 h-80 md:w-96 md:h-96">
+            <img alt="Couple in front of Eiffel Tower" class="w-full h-full object-cover" height="400" src="YOUR_IMAGE_URL_2.jpg" width="400"/> <!-- Replace with your image URL -->
+        </div>
+        <div class="bg-purple-50 p-8 md:ml-8 mt-8 md:mt-0 border border-purple-500 rounded-lg">
+            <h1 class="text-3xl font-playfair text-purple-700 mb-4">RSVP & Info</h1>
+            <p class="text-lg text-gray-700 mb-4">We're really excited to see you, and hope you can join us for our special day!</p>
+            <hr class="border-purple-500 mb-4"/>
+            <div class="mb-4">
+                <h2 class="text-xl font-playfair text-purple-700">When</h2>
+                <p class="text-md text-pink-700">Saturday, December 14, 2024</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-xl font-playfair text-purple-700">Where</h2>
+                <p class="text-md text-pink-700">DEALINGS HOTEL, ILESE IJEBU - ODE</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-xl font-playfair text-purple-700">Dress Code</h2>
+                <p class="text-md text-pink-700">Come in your best (Lilac Purple, and Gold)</p>
+            </div>
+            <a href="{{ url_for('rsvp') }}" class="bg-orange-600 text-white py-2 px-4 rounded inline-block">RSVP</a>
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center py-10 bg-purple-50">
+        <h1 class="text-4xl text-purple-800 mb-2">Pre-Wedding Photos</h1>
+        <p class="text-lg text-gray-700 mb-8">Come witness the joyful union of love and togetherness</p>
+        <div class="grid grid-cols-3 gap-4">
+            <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="YOUR_IMAGE_URL_3.jpg" width="300"/> <!-- Replace with your image URL -->
+            <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="YOUR_IMAGE_URL_4.jpg" width="300"/> <!-- Replace with your image URL -->
+            <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="YOUR_IMAGE_URL_5.jpg" width="300"/> <!-- Replace with your image URL -->
+            <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="YOUR_IMAGE_URL_6.jpg" width="300"/> <!-- Replace with your image URL -->
+            <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="YOUR_IMAGE_URL_7.jpg" width="300"/> <!-- Replace with your image URL -->
+            <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="YOUR_IMAGE_URL_8.jpg" width="300"/> <!-- Replace with your image URL -->
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+        <div>
+            <img alt="Aso Ebi fabric" class="w-full h-auto" height="800" src="YOUR_IMAGE_URL_9.jpg" width="600"/> <!-- Replace with your image URL -->
+        </div>
+        <div>
+            <img alt="Aso Ebi fabric" class="w-full h-auto" height="800" src="YOUR_IMAGE_URL_10.jpg" width="600"/> <!-- Replace with your image URL -->
+        </div>
+        <div>
+            <img alt="Aso Ebi fabric" class="w-full h-auto" height="800" src="YOUR_IMAGE_URL_11.jpg" width="600"/> <!-- Replace with your image URL -->
+        </div>
+        <div>
+            <img alt="Aso Ebi fabric" class="w-full h-auto" height="800" src="YOUR_IMAGE_URL_12.jpg" width="600"/> <!-- Replace with your image URL -->
+        </div>
+    </div>
+
+    <div class="text-purple-700 text-2xl p-4">
+        #WINNINGWITHFELICIA
+    </div>
+
+</body>
+</html>

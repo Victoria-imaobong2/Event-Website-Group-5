@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <div class="max-w-4xl mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-4">RSVP</h1>
+        <p class="mb-4">
+            We are thrilled to invite you to the beautiful union of <span class="font-bold">Felicia and Winner!</span> As we celebrate this special day, your presence means the world to us. To ensure everything is perfect, please take a moment to fill out this form. It will help us confirm your attendance and allow us to order any materials you may need for the wedding festivities.
+        </p>
+        <p class="mb-4">
+            Your responses will assist us in planning the event and accommodating everyone comfortably. Whether you're bringing a plus one, need invitations, or have specific requests, we want to make sure you have a memorable experience. Thank you for being a part of our joyous occasion!
+        </p>
+        <h2 class="text-2xl font-bold mb-4">Guest Information:</h2>
+        <p class="mb-4">
+            This section helps us gather essential details about you as a guest. Please provide your full name, email address, and phone number so we can communicate important updates regarding the wedding.
+        </p>
+        <form action="{{ url_for('rsvp') }}" method="POST" class="space-y-6">
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" for="name">
+                    <i class="fas fa-user mr-2"></i>What's your name?
+                </label>
+                <div class="flex space-x-4">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" class="w-1/2 p-2 border border-gray-300 rounded">
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" class="w-1/2 p-2 border border-gray-300 rounded">
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" for="phone">
+                    <i class="fas fa-phone mr-2"></i>Your Phone Number
+                </label>
+                <input type="text" id="phone" name="phone" placeholder="e.g. +234" class="w-full p-2 border border-gray-300 rounded">
+                <p class="text-xs text-gray-500 mt-1">Your phone number will help us reach you in case of any last-minute changes or details.</p>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" for="whatsapp">
+                    <i class="fab fa-whatsapp mr-2"></i>Your WhatsApp Number
+                </label>
+                <input type="text" id="whatsapp" name="whatsapp" placeholder="e.g. +234" class="w-full p-2 border border-gray-300 rounded">
+                <p class="text-xs text-gray-500 mt-1">Your WhatsApp number will help us reach you for payments.</p>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" for="email">
+                    <i class="fas fa-envelope mr-2"></i>Your Email
+                </label>
+                <input type="email" id="email" name="email" placeholder="e.g. felicia.winner@gmail.com" class="w-full p-2 border border-gray-300 rounded">
+                <p class="text-xs text-gray-500 mt-1">We will use this email to send you any important information about the wedding.</p>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-600">Continue</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
