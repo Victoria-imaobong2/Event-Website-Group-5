@@ -40,5 +40,9 @@ def rsvp():
 
     return render_template('rsvp.html')
 
+@app.route('/Event-Team',methods=['GET','POST'])
+def Event_Team():
+    return render_template('Event_Team.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
