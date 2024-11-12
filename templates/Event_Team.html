@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/eventteam.css"> 
+
+</head>
+<body class="bg-pink-50">
+    <header class="flex justify-between items-center p-4 bg-white shadow">
+        <h1 class="text-xl font-bold text-purple-800">Victoria & Ebuka</h1>
+        <a class="text-purple-600" href="{{ url_for('index') }}">Home</a>
+
+    </header>
+
+   
+   <section>
+    <a href="speakers.html">
+        <h5>Event Management Team</h5>
+        <h3>Zion Global Event Handlers</h3>
+    </a>
+    <p>Meet the Team Handling the event</p>
+   </section>
+
+   <div class="container">
+    <div class="grid">
+        <div class="speaker-card">
+            <div class="image-container">
+                <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="{{ url_for('static', filename='images/Zion.jpg') }}" width="300"/>
+                <div class="flag-icon">
+                    <i class="fas fa-flag"></i>
+                </div>
+            </div>
+            <h2>Mazi Zion</h2>
+            <p>Backend Developer</p>
+        </div>
+        <div class="speaker-card">
+            <div class="image-container">
+                <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="{{ url_for('static', filename='images/bobby.jpg') }}" width="300"/>
+            </div>
+            <h2>Ukwuoma Gerald</h2>
+            <p>Ui/Ux Designer</p>
+        </div>
+        <div class="speaker-card">
+            <div class="image-container">
+                <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="{{ url_for('static', filename='images/kene.jpg') }}" width="300"/>
+            </div>
+            <h2>Nduka Mmesoma</h2>
+            <p>Web Designer</p>
+        </div>
+        <div class="speaker-card">
+            <div class="image-container">
+                <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="{{ url_for('static', filename='images/pre3.jpeg') }}" width="300"/>
+            </div>
+            <h2>Jace Spark</h2>
+            <p>Crypto Trader</p>
+        </div>
+        <div class="speaker-card">
+            <div class="image-container">
+                <img alt="Couple in front of Eiffel Tower" class="rounded-lg shadow-lg" height="400" src="{{ url_for('static', filename='images/pre3.jpeg') }}" width="300"/>
+            </div>
+            <h2>Kashifu Inuwa Abdullahi</h2>
+            <p>NITDA Boss</p>
+        </div>
+
+   <footer>
+    <div>
+        © 2024 Tech Conference. All rights reserved.
+    </div>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="speakers.html">Speakers</a> 
+        <a href="schedule.html">Schedule</a> 
+        <a href="venue.html">Venue</a> 
+        <a href="register.html">Register</a> 
+    </nav>
+   </footer>
+</body>
+</html>

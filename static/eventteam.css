@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark text color for readability */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Section Styles */
+section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #e9ecef; /* Light gray background for the section */
+}
+
+section h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0056b3; /* Match section title color with header */
+}
+
+section h3 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #0056b3; /* Match section title color with header */
+}
+
+section p {
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+
+/* Speaker Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.speaker-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    width: 100px; /* Fixed width for portrait images */
+    height: 100px; /* Fixed height for round shape */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image covers the area */
+    border: 3px solid #0056b3; /* Border color matching the header */
+}
+
+.flag-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+}
