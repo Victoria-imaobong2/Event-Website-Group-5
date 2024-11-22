@@ -5,17 +5,23 @@
     <title>RSVP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
+
 <body class="bg-white text-gray-800 font-sans">
+    <header class="flex justify-between items-center p-4 bg-white shadow">
+        <h1 class="text-xl font-bold text-purple-800">Victoria & Ebuka</h1>
+        <a class="text-purple-600" href="{{ url_for('index') }}">HOME</a>
+    </header>
     <div class="max-w-4xl mx-auto p-8">
-        <h1 class="text-3xl font-bold mb-4">RSVP</h1>
+        <h1 class="text-3xl font-bold mb-4" style="color: purple;">RSVP</h1>
         <p class="mb-4">
-            We are thrilled to invite you to the beautiful union of <span class="font-bold">Victoria and Ebuka!</span> As we celebrate this special day, your presence means the world to us. To ensure everything is perfect, please take a moment to fill out this form. It will help us confirm your attendance and allow us to order any materials you may need for the wedding festivities.
+            We are thrilled to invite you to the beautiful union of <span class="font-bold" style="color: purple;">Victoria and Ebuka!</span> As we celebrate this special day, your presence means the world to us. To ensure everything is perfect, please take a moment to fill out this form. It will help us confirm your attendance and allow us to order any materials you may need for the wedding festivities.
         </p>
         <p class="mb-4">
             Your responses will assist us in planning the event and accommodating everyone comfortably. Whether you're bringing a plus one, need invitations, or have specific requests, we want to make sure you have a memorable experience. Thank you for being a part of our joyous occasion!
         </p>
-        <h2 class="text-2xl font-bold mb-4">Guest Information:</h2>
+        <h2 class="text-2xl font-bold mb-4" style="color: purple;">Guest Information:</h2>
         <p class="mb-4">
             This section helps us gather essential details about you as a guest. Please provide your full name, email address, and phone number so we can communicate important updates regarding the wedding.
         </p>
