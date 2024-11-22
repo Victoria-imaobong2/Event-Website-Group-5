@@ -13,7 +13,7 @@
     <header class="flex justify-between items-center p-4 bg-white shadow">
         <h1 class="text-xl font-bold text-purple-800">Victoria & Ebuka</h1>
         <a class="text-purple-600" href="{{ url_for('rsvp') }}">RSVP</a>
-        <a class="text-purple-600" href="{{ url_for('Event_Team') }}">Event-Team</a>
+        <a class="text-purple-600" href="{{ url_for('Event_Team') }}">Team</a>
     </header>
 
     <main class="flex flex-col md:flex-row items-center justify-center min-h-screen p-8">
@@ -51,6 +51,25 @@
             </div>
             <a href="{{ url_for('rsvp') }}" class="bg-orange-600 text-white py-2 px-4 rounded inline-block">RSVP</a>
         </div>
+        <div class="bg-purple-50 p-8 md:ml-8 mt-8 md:mt-0 border border-purple-500 rounded-lg">
+            <h1 class="text-3xl font-playfair text-purple-700 mb-4">SCHEDULE</h1>
+            <p class="text-lg text-gray-700 mb-4">Below is the order of the ceremony for the event!</p>
+            <hr class="border-purple-500 mb-4"/>
+            <div class="mb-4">
+                <h2 class="text-xl font-playfair text-purple-700">Blessing of Marriage @ Anglican Church of Light ACOL</h2>
+                <p class="text-md text-pink-700">9:00 AM</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-xl font-playfair text-purple-700">Reception</h2>
+                <p class="text-md text-pink-700">SMAT ADITORIUM, SICT</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-xl font-playfair text-purple-700">Toast</h2>
+                <p class="text-md text-pink-700">His banner over us is Love</p>
+            </div>
+            <a href="{{ url_for('rsvp') }}" class="bg-orange-600 text-white py-2 px-4 rounded inline-block">RSVP</a>
+        </div>
+
     </div>
 
     <div class="flex flex-col items-center py-10 bg-purple-50">

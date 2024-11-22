@@ -64,9 +64,9 @@ section p {
 }
 
 .image-container img {
-    width: 100px; /* Fixed width for portrait images */
-    height: 100px; /* Fixed height for round shape */
-    border-radius: 50%; /* Make the image round */
+    width: 150px; /* Fixed width for portrait images */
+    height: 200px; /* Fixed height for round shape */
+    border-radius: 0; /* Make the image round */
     object-fit: cover; /* Ensure the image covers the area */
     border: 3px solid #0056b3; /* Border color matching the header */
 }
