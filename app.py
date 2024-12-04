@@ -16,6 +16,7 @@ def rsvp():
         phone = request.form.get('phone')
         whatsapp = request.form.get('whatsapp')
         email = request.form.get('email')
+        goodwill = request.form.get('goodwill')
 
         # Google Apps Script URL
         google_script_url = 'https://script.google.com/macros/s/AKfycbylOjulVjIMUji8RPr6pHGHWsZFb4ciF6xUoZKjJrSQVJZEiGNz0NJ5AhFnRlHwVXI/exec'  # Replace with your URL
